@@ -13,13 +13,9 @@ $(document).ready(function() {
     $('#input').val("");
     console.log(e.currentTarget[0].value);
   })
-
   $('#friend-list').on('click', 'li', function(e) {
     $(this).remove();
-
   })
-
-
   function createFriend(name) {
     return $(`<li> ${name}</li>`).addClass('list-group-item list-group-item-action list-group-item-dark');
   }
